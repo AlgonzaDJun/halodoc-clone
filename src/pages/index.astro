@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import HeaderCard from "../components/Home/HeaderCard.astro";
+import Card from "../components/Home/Card.astro";
+---
+
+<Layout title="Halodocs">
+  <header class="bg-abu pl-20 pt-14 pb-12 space-y-3 text-text-abu bg-[url('/home-banner-v3.svg')] bg-no-repeat bg-bottom">
+    <h1 class="font-semibold text-3xl">Solusi Kesehatan Terlengkap</h1>
+    <p class="text-xs">
+      Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi
+      seputar <br /> kesehatan, semua bisa di Halodoc!
+    </p>
+
+    <div id="container" class="flex gap-4">
+      <HeaderCard src="/header_1.png" title="Chat Dengan Dokter" />
+      <HeaderCard src="/header2.png" title="Toko Kesehatan" />
+      <HeaderCard src="/header3.png" title="Buat Janji RS" />
+      <HeaderCard src="/header4.png" title="Janji Medis" />
+      <HeaderCard src="/header5.png" title="Home Lab & Vaksinasi" />
+    </div>
+
+    <Card width="max-w-[354px]">
+      <div class="flex text-left items-center gap-2 px-2">
+        <img src="/header6.png" alt="" class="w-6 h-6" />
+
+        <div>
+          <h1 class="text-sm font-medium">Sambungkan Asuransimu</h1>
+          <p class="text-xs font-light">
+            Dapatkan manfaat asuransi secara langsung untuk layanan Halodoc.
+          </p>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+        </svg>
+      </div>
+    </Card>
+  </header>
+</Layout>
+
+<style></style>

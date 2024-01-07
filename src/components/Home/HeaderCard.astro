@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+
+const {src, title} = Astro.props;
+
+---
+
+<div class="w-36 p-1 py-2 text-center space-y-2 border rounded bg-white hover:border-black cursor-pointer">
+    <Image
+      src={src}
+      width="70"
+      height="70"
+      class="mx-auto"
+      alt="doctor"
+    />
+    <p class="text-xs font-medium">{title}</p>
+  </div>
