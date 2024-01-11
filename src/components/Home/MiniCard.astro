@@ -1,0 +1,8 @@
+---
+const { img, title } = Astro.props;
+---
+
+<div class="w-9 text-center space-y-1 flex flex-col items-center cursor-pointer">
+  <img src={img} alt="" class="w-full" />
+  <p class="font-light text-xs capitalize">{title}</p>
+</div>

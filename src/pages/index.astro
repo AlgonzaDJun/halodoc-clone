@@ -3,10 +3,13 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import HeaderCard from "../components/Home/HeaderCard.astro";
 import Card from "../components/Home/Card.astro";
+import MiniCard from "../components/Home/MiniCard.astro";
 ---
 
 <Layout title="Halodocs">
-  <header class="bg-abu pl-20 pt-14 pb-12 space-y-3 text-text-abu bg-[url('/home-banner-v3.svg')] bg-no-repeat bg-bottom">
+  <header
+    class="bg-abu pl-20 pt-14 pb-12 space-y-3 text-text-abu bg-[url('/home-banner-v3.svg')] bg-no-repeat bg-bottom"
+  >
     <h1 class="font-semibold text-3xl">Solusi Kesehatan Terlengkap</h1>
     <p class="text-xs">
       Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi
@@ -48,6 +51,86 @@ import Card from "../components/Home/Card.astro";
       </div>
     </Card>
   </header>
+
+  <section
+    class="pl-20 pr-24 pt-14 pb-12 space-y-3 xl:space-y-0 xl:space-x-10 text-text-abu xl:grid xl:grid-cols-2"
+  >
+    <div class="space-y-4">
+      <h1 class="font-semibold text-xl">Layanan Khusus</h1>
+      <div class="flex items-center flex-wrap gap-x-16 gap-y-4">
+        <!-- CARD -->
+        <MiniCard
+          img="home/layanan_khusus/tc-mw-home.webp"
+          title="Layanan Bidang"
+        />
+        <MiniCard
+          img="home/layanan_khusus/diabetes-care.webp"
+          title="Perawatan Diabetes"
+        />
+        <MiniCard
+          img="home/layanan_khusus/heart-care.webp"
+          title="Kesehatan Jantung"
+        />
+        <MiniCard
+          img="home/layanan_khusus/skin-health.webp"
+          title="Kesehatan Kulit"
+        />
+        <MiniCard
+          img="home/layanan_khusus/sexual-health.webp"
+          title="Kesehatan Seksual"
+        />
+        <MiniCard
+          img="home/layanan_khusus/mental-health-v2.webp"
+          title="Kesehatan Mental"
+        />
+        <MiniCard
+          img="home/layanan_khusus/animal-health-v2.webp"
+          title="Kesehatan Hewan"
+        />
+        <MiniCard img="home/layanan_khusus/parenting.webp" title="Parenting" />
+      </div>
+    </div>
+    <div class="space-y-4">
+      <h1 class="font-semibold text-xl">Penunjang Kesehatan</h1>
+      <div class="flex items-center flex-wrap gap-x-16 gap-y-4">
+        <!-- CARD -->
+        <MiniCard img="home/penunjang_kesehatan/stress-check-icon.webp" title="Cek Stres" />
+        <MiniCard
+          img="home/penunjang_kesehatan/period-tracker-v2.webp"
+          title="Kalender Menstruasi"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/bmi-calculator-v2.webp"
+          title="Kalkulator BMI"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/pregnancy-v2.webp"
+          title="Kalender Kehamilan"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/heart-risk-calculator.webp"
+          title="Risiko Jantung"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/diabetes-calculator.webp"
+          title="Risiko Diabetes"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/medicine-reminder-v2.webp"
+          title="Pengingat Obat"
+        />
+        <MiniCard img="home/penunjang_kesehatan/donation.webp" title="Donasi" />
+        <MiniCard
+          img="home/penunjang_kesehatan/depresi.webp"
+          title="tes depresi"
+        />
+        <MiniCard
+          img="home/penunjang_kesehatan/anxiety.webp"
+          title="tes gangguan kecemasan"
+        />
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style></style>
