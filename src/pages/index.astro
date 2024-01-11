@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import HeaderCard from "../components/Home/HeaderCard.astro";
 import Card from "../components/Home/Card.astro";
 import MiniCard from "../components/Home/MiniCard.astro";
+import Article from "../components/Home/Article.astro";
 ---
 
 <Layout title="Halodocs">
@@ -52,6 +53,7 @@ import MiniCard from "../components/Home/MiniCard.astro";
     </Card>
   </header>
 
+  <!-- LAYANAN -->
   <section
     class="pl-20 pr-24 pt-14 pb-12 space-y-3 xl:space-y-0 xl:space-x-10 text-text-abu xl:grid xl:grid-cols-2"
   >
@@ -131,6 +133,10 @@ import MiniCard from "../components/Home/MiniCard.astro";
       </div>
     </div>
   </section>
+
+  <!-- ARTICLE -->
+  <Article/>
+
 </Layout>
 
 <style></style>
