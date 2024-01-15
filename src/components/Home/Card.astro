@@ -1,9 +1,9 @@
 ---
-const { width, noTextCenter } = Astro.props;
+const { width, noTextCenter, noPadding } = Astro.props;
 ---
 
 <div
-  class=`p-1 py-2 ${noTextCenter ? '' : "text-center"} space-y-2 border rounded bg-white hover:border-black cursor-pointer ${width}`
+  class=`${noPadding ? '' : 'p-1 py-2'}  ${noTextCenter ? '' : "text-center"} space-y-2 border rounded bg-white hover:border-black cursor-pointer ${width}`
 >
   <slot />
 </div>

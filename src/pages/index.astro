@@ -5,11 +5,12 @@ import HeaderCard from "../components/Home/HeaderCard.astro";
 import Card from "../components/Home/Card.astro";
 import MiniCard from "../components/Home/MiniCard.astro";
 import Article from "../components/Home/Article.astro";
+import ObatVitamin from "../components/Home/ObatVitamin.astro";
 ---
 
 <Layout title="Halodocs">
   <header
-    class="bg-abu pl-20 pt-14 pb-12 space-y-3 text-text-abu bg-[url('/home-banner-v3.svg')] bg-no-repeat bg-bottom"
+    class="bg-abu md:pl-20 pt-14 pb-12 space-y-3 text-text-abu bg-[url('/home-banner-v3.svg')] bg-no-repeat bg-bottom px-4"
   >
     <h1 class="font-semibold text-3xl">Solusi Kesehatan Terlengkap</h1>
     <p class="text-xs">
@@ -17,7 +18,7 @@ import Article from "../components/Home/Article.astro";
       seputar <br /> kesehatan, semua bisa di Halodoc!
     </p>
 
-    <div id="container" class="flex gap-4">
+    <div id="container" class="flex items-center gap-4 overflow-scroll w-full">
       <HeaderCard src="/header_1.png" title="Chat Dengan Dokter" />
       <HeaderCard src="/header2.png" title="Toko Kesehatan" />
       <HeaderCard src="/header3.png" title="Buat Janji RS" />
@@ -55,11 +56,11 @@ import Article from "../components/Home/Article.astro";
 
   <!-- LAYANAN -->
   <section
-    class="pl-20 pr-24 pt-14 pb-12 space-y-3 xl:space-y-0 xl:space-x-10 text-text-abu xl:grid xl:grid-cols-2"
+    class="md:pl-20 md:pr-24 pt-14 pb-12 space-y-3 xl:space-y-0 xl:space-x-10 text-text-abu xl:grid xl:grid-cols-2 px-4 w-full"
   >
     <div class="space-y-4">
       <h1 class="font-semibold text-xl">Layanan Khusus</h1>
-      <div class="flex items-center flex-wrap gap-x-16 gap-y-4">
+      <div class="flex items-center gap-x-16 gap-y-4 overflow-scroll">
         <!-- CARD -->
         <MiniCard
           img="home/layanan_khusus/tc-mw-home.webp"
@@ -92,11 +93,15 @@ import Article from "../components/Home/Article.astro";
         <MiniCard img="home/layanan_khusus/parenting.webp" title="Parenting" />
       </div>
     </div>
+
     <div class="space-y-4">
       <h1 class="font-semibold text-xl">Penunjang Kesehatan</h1>
-      <div class="flex items-center flex-wrap gap-x-16 gap-y-4">
+      <div class="flex items-center gap-x-16 gap-y-4 overflow-scroll">
         <!-- CARD -->
-        <MiniCard img="home/penunjang_kesehatan/stress-check-icon.webp" title="Cek Stres" />
+        <MiniCard
+          img="home/penunjang_kesehatan/stress-check-icon.webp"
+          title="Cek Stres"
+        />
         <MiniCard
           img="home/penunjang_kesehatan/period-tracker-v2.webp"
           title="Kalender Menstruasi"
@@ -135,8 +140,9 @@ import Article from "../components/Home/Article.astro";
   </section>
 
   <!-- ARTICLE -->
-  <Article/>
+  <Article />
 
+  <ObatVitamin />
 </Layout>
 
 <style></style>
